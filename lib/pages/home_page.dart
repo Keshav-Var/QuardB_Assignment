@@ -1,3 +1,4 @@
+import 'package:assignment/pages/detail_page.dart';
 import 'package:assignment/providers.dart';
 import 'package:assignment/pages/search_page.dart';
 import 'package:assignment/widgets/hero_section.dart';
@@ -144,7 +145,9 @@ class HomePage extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => SearchPage()));
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => DetailPage(show: show)));
                 },
                 child: Container(
                   width: 120,
